@@ -5,7 +5,7 @@
 Summary:	Linux kernel trace event library
 Name:		libtraceevent
 Version:	1.7.2
-Release:	0.1
+Release:	1
 License:	GPL v2/LGPL
 Group:		Libraries
 Source0:	https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/%{name}-%{version}.tar.gz
