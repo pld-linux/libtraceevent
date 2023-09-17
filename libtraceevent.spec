@@ -5,12 +5,12 @@
 Summary:	Linux kernel trace event library
 Summary(pl.UTF-8):	Biblioteka do śledzenia zdarzeń jądra Linuksa
 Name:		libtraceevent
-Version:	1.7.2
-Release:	2
+Version:	1.7.3
+Release:	1
 License:	GPL v2/LGPL v2.1
 Group:		Libraries
 Source0:	https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/%{name}-%{version}.tar.gz
-# Source0-md5:	5a8cd771ab709e7a7eb793555c7e570f
+# Source0-md5:	5616c52896da1198f531e5612f35e2ca
 URL:		https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
