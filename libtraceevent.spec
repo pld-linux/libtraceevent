@@ -6,13 +6,13 @@
 Summary:	Linux kernel trace event library
 Summary(pl.UTF-8):	Biblioteka do śledzenia zdarzeń jądra Linuksa
 Name:		libtraceevent
-Version:	1.8.4
+Version:	1.9.0
 Release:	1
 License:	GPL v2/LGPL v2.1
 Group:		Libraries
 #Source0Download: https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
 Source0:	https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git/snapshot/%{name}-%{version}.tar.gz
-# Source0-md5:	938bab0e7d413a4082406a7e9bae471e
+# Source0-md5:	8ed4efc1f9a174ecbd25270ee2a54c94
 URL:		https://git.kernel.org/pub/scm/libs/libtrace/libtraceevent.git
 %{?with_apidocs:BuildRequires:	asciidoc}
 BuildRequires:	pkgconfig
@@ -102,15 +102,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_libdir}/libtraceevent.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libtraceevent.so.1
+%{_libdir}/libtraceevent.so.*.*.*
+%ghost %{_libdir}/libtraceevent.so.1
 %dir %{_libdir}/traceevent
 %dir %{_libdir}/traceevent/plugins
-%attr(755,root,root) %{_libdir}/traceevent/plugins/*.so
+%{_libdir}/traceevent/plugins/*.so
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libtraceevent.so
+%{_libdir}/libtraceevent.so
 %{_includedir}/traceevent
 %{_pkgconfigdir}/libtraceevent.pc
 %if %{with apidocs}
